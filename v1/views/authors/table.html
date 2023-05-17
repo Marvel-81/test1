@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> Имя </th> 
+        </tr>
+    </thead>
+    <tbody>
+        <? foreach ($authors as $author): ?>
+            <tr>
+                <td> <?= $author['author_id']; ?> </td>
+                <td> <?= $author['author_fio']; ?> </td>
+            </tr>
+        <? endforeach; ?>
+    </tbody>
+</table>
